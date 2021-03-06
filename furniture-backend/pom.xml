@@ -1,0 +1,85 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>furniture-backend</groupId>
+  <artifactId>furniture-backend</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>furniture-backend</name>
+  
+  	<!-- spring boot基本环境 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.3.RELEASE</version>
+	</parent>
+	
+	<dependencies>
+  		<!--web应用基本环境配置 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<!-- 去掉默认配置 -->
+			<!-- <exclusions>
+            <exclusion>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-logging</artifactId>
+            </exclusion>
+        </exclusions> -->
+		</dependency>   
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+         <!-- eurake -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<!-- <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId> -->
+		</dependency>
+		<!--lombok-->
+       <dependency>
+           <groupId>org.projectlombok</groupId>
+           <artifactId>lombok</artifactId>
+           <!-- <version>1.18.6</version> -->
+       </dependency>
+	</dependencies>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Greenwich.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<build>
+		<plugins>
+			<!-- spring-boot-maven-plugin插件就是打包spring boot应用的 -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<!-- 指定阿里云仓库 -->
+	<repositories>
+        <repository>
+            <id>aliyunmaven</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+	<modules>
+		<module>furniture-backend-eurake</module>
+		<module>furniture-backend-zuul</module>
+		<module>furniture-backend-order</module>
+		<module>furniture-backend-warehouse</module>
+		<module>furniture-backend-product</module>
+		<module>furniture-backend-salary</module>
+		<module>furniture-backend-config</module>
+	</modules>
+</project>
