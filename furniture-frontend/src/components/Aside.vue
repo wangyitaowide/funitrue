@@ -17,7 +17,6 @@
                         <el-menu-item index="1-1">
                             <router-link to="/warehouse">仓储</router-link>
                         </el-menu-item>
-                        <el-menu-item index="1-2">选项2</el-menu-item>
                     </el-menu-item-group>
                     <!-- <el-menu-item-group title="分组2">
                         <el-menu-item index="1-3">选项3</el-menu-item>
@@ -35,7 +34,6 @@
                         <el-menu-item index="2-1">
                             <router-link to="/product">产品</router-link>
                         </el-menu-item>
-                        <el-menu-item index="2-2">选项2</el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
                 <el-submenu index="3">
@@ -46,7 +44,6 @@
                         <el-menu-item index="3-1">
                             <router-link to="/orders">订单</router-link>
                         </el-menu-item>
-                        <el-menu-item index="3-2">选项2</el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
                 <el-submenu index="4">
@@ -57,7 +54,6 @@
                         <el-menu-item index="4-1">
                             <router-link to="/salary">工资</router-link>
                         </el-menu-item>
-                        <el-menu-item index="4-2">选项2</el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
                 <el-submenu index="5">
@@ -68,7 +64,6 @@
                         <el-menu-item index="5-1">
                             <router-link to="/config">配置</router-link>
                         </el-menu-item>
-                        <el-menu-item index="5-2">选项2</el-menu-item>
                     </el-menu-item-group>
                 </el-submenu>
             </el-menu>

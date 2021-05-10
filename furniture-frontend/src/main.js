@@ -5,7 +5,15 @@ import router from "./router";
 import store from "./store";
 import "./plugins/element.js";
 import axios from 'axios';
-
+/**引入bootstrap
+import 'bootstrap';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+*/
+/**
+ * 引入改变主题文件
+import './element-variables.scss'
+*/
 Vue.config.productionTip = false;
 Vue.prototype.$http=axios;
 

@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h3>orders</h3>
+    <h3>订单详情</h3>
     <el-button @click="getData()">获取数据</el-button>
   </div>
 </template>

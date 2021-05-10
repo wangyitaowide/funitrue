@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-container>
-      <el-header>Header</el-header>
+      <el-header>家具进销存系统</el-header>
       <el-container>
         <el-aside>
           <Aside style="width:100%;"/>
@@ -49,10 +49,8 @@ export default {
   }
   
   .el-main {
-    background-color: #E9EEF3;
+    background-color: #ffffff;
     color: #333;
     width: 80% !important;
-    text-align: center;
-    line-height: 160px;
   }
 </style>
