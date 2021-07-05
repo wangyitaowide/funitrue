@@ -7,4 +7,13 @@
   </parent>
   <groupId>furniture-backend-salary</groupId>
   <artifactId>furniture-backend-salary</artifactId>
+  
+  <!-- reids 依赖 start -->
+  <dependencies>
+	<dependency>
+        <groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+  </dependencies>
+  <!-- redis 依赖end -->
 </project>

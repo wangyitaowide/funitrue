@@ -14,9 +14,9 @@
         SELECT * from product where id = #{id}
     </select>
     <!--增加-->
-    <!-- <insert id="add" parameterType="com.jack.entity.Test">
-        INSERT INTO test(name,note) VALUES (#{name},#{note})
-    </insert> -->
+    <insert id="add" parameterType="com.furniture.entity.Product">
+        INSERT INTO product(name,size) VALUES (#{name},#{size})
+    </insert>
     <!--删除-->
     <!-- <delete id="deleteById" parameterType="int">
         DELETE FROM test where id = #{id}

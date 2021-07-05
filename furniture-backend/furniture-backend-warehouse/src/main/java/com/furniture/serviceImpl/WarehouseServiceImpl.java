@@ -17,5 +17,9 @@ public class WarehouseServiceImpl implements WarehouseService {
 	public Warehouse findById(Long id) {
 		return repository.findById(id);
 	}
-
+	
+	@Override
+	public Integer add(Warehouse warehouse) {
+		return repository.add(warehouse);
+	}
 }

@@ -8,5 +8,7 @@ import com.furniture.entity.Warehouse;
 public interface WarehouseRepository {
 	
 	Warehouse findById(Long id);
+	
+	Integer add(Warehouse warehouse);
 
 }

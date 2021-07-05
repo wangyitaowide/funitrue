@@ -7,9 +7,9 @@
         SELECT * from warehouse where id = #{id}
     </select>
     <!--增加-->
-    <!-- <insert id="add" parameterType="com.jack.entity.Test">
-        INSERT INTO test(name,note) VALUES (#{name},#{note})
-    </insert> -->
+    <insert id="add" parameterType="com.furniture.entity.Warehouse">
+        INSERT INTO warehouse(name,size) VALUES (#{name},#{size})
+    </insert>
     <!--删除-->
     <!-- <delete id="deleteById" parameterType="int">
         DELETE FROM test where id = #{id}

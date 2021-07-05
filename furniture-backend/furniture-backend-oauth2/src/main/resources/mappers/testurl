@@ -1,0 +1,8 @@
+获取授权码
+http://localhost:8087/oauth/authorize?client_id=client&response_type=code&scope=all&redirect_uri=http://www.baidu.com
+使用授权码获取access token
+post方法
+http://localhost:8087/oauth/token?grant_type=authorization_code&code=7I29nh&scope=all&redirect_uri=http://www.baidu.com&client_secret=123456&client_id=client
+刷新token
+post方法
+http://localhost:8087/oauth/token?grant_type=refresh_token&code=SqJ7IL&scope=all&redirect_uri=http://www.baidu.com&client_secret=123456&client_id=client&refresh_token=999c796d-af97-49fd-ac27-be18a7b6ca35

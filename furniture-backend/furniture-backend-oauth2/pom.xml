@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>furniture-backend</groupId>
+    <artifactId>furniture-backend</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>furniture-backend-oauth2</groupId>
+  <artifactId>furniture-backend-oauth2</artifactId>
+  <dependencies>
+  	<!-- oauth2第一种依赖 start -->
+  	<!-- springboot2.0已经将oauth2.0与security整合在一起 -->
+	<!-- <dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-security</artifactId>
+	</dependency> -->
+	<!-- 一些注解和API从spring security5.0中移除，需要导入下面的依赖包  -->
+	 <!-- <dependency>
+	     <groupId>org.springframework.security.oauth.boot</groupId>
+	     <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+	     <version>2.0.0.RELEASE</version>
+	 </dependency> -->
+  	<!-- oauth2第一种依赖 end -->
+  	
+  	<!-- oauth2第二种依赖 start -->
+    <dependency>
+    	<groupId>org.springframework.security.oauth</groupId>
+   		<artifactId>spring-security-oauth2</artifactId>
+		<version>2.3.3.RELEASE</version>
+	</dependency>
+  	<!-- oauth2第二种依赖 end -->
+  	<!-- mybatis 依赖 start -->		
+	<dependency>
+	    <groupId>org.mybatis.spring.boot</groupId>
+	    <artifactId>mybatis-spring-boot-starter</artifactId>
+	    <version>2.1.2</version>
+	</dependency>
+	<!-- mybatis 依赖end -->
+	<!-- mysql连接驱动start -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <scope>runtime</scope>
+	</dependency>
+	<!-- mysql连接驱动end -->
+	<!-- 添加jwt依赖 -->
+	<dependency>
+  		<groupId>org.springframework.security</groupId>
+  		<artifactId>spring-security-jwt</artifactId>
+  		<version>1.1.1.RELEASE</version>
+  	</dependency>
+	<dependency>
+		<groupId>io.jsonwebtoken</groupId>
+		<artifactId>jjwt</artifactId>
+		<version>0.9.1</version>
+	</dependency>
+  	<!--  -->
+  </dependencies>
+</project>

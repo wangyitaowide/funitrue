@@ -5,4 +5,6 @@ import com.furniture.entity.Warehouse;
 public interface WarehouseService {
 
 	Warehouse findById(Long id);
+	
+	Integer add(Warehouse warehouse);
 }

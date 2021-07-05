@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.furniture.dao.UserRepository" >
+ 
+	<resultMap id="BaseResultMap" type="com.furniture.entity.User">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="role" jdbcType="VARCHAR" property="role" />
+    </resultMap>
+
+	<!--通过id查找-->
+    <select id="findUserByName" parameterType="java.lang.String" resultType="com.furniture.entity.User">
+        SELECT * from user where name = #{name}
+    </select>
+	
+    <select id="findUser" parameterType="com.furniture.entity.User" resultMap="BaseResultMap">
+        SELECT * from user where name = #{name} AND password = #{password}
+    </select>
+</mapper>

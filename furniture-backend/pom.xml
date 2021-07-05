@@ -26,6 +26,7 @@
             </exclusion>
         </exclusions> -->
 		</dependency>   
+		<!-- springboot test -->
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -45,6 +46,7 @@
        </dependency>
 	</dependencies>
 	
+	<!-- springcloud基本依赖 -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -81,5 +83,6 @@
 		<module>furniture-backend-product</module>
 		<module>furniture-backend-salary</module>
 		<module>furniture-backend-config</module>
-	</modules>
+		<module>furniture-backend-oauth2</module>
+</modules>
 </project>

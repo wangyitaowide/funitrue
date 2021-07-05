@@ -24,4 +24,12 @@ public class TestingController {
     public Product findById(){
           return productService.findById(1L);
     }
+	
+	@GetMapping(value = "/add",produces = MediaType.APPLICATION_JSON_VALUE)
+    public Integer add(){
+		Product product = new Product();
+		product.setName("ww");
+		product.setSize("rr");
+        return productService.add(product);
+    }
 }

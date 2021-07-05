@@ -8,5 +8,7 @@ import com.furniture.entity.Product;
 public interface ProductRepository {
 	
 	Product findById(Long id);
+	
+	Integer add(Product product);
 
 }
